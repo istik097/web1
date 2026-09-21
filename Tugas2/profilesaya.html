@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        section h2 {
+            color: #2563eb;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+
+        .biodata {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 12px;
+        }
+
+        .biodata strong {
+            color: #475569;
+        }
+
+        .pendidikan {
+            border-left: 4px solid #2563eb;
+            padding-left: 20px;
+        }
+
+        .pendidikan-item {
+            margin-bottom: 20px;
+        }
+
+        .pendidikan-item h3 {
+            color: #1e40af;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background: #0f172a;
+            color: white;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            .biodata {
+                grid-template-columns: 1fr;
+                gap: 3px;
+                margin-bottom: 12px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER / FOTO PROFIL -->
+    <header>
+        <img src="foto.jpg" alt="Foto Profil">
+        <h1>Nama Lengkap Anda</h1>
+        <p>Pelajar / Mahasiswa / Profesional</p>
+    </header>
+
+    <div class="container">
+
+        <!-- DATA DIRI -->
+        <section>
+            <h2>Profil Saya</h2>
+
+            <div class="biodata">
+                <strong>Nama</strong>
+                <span>istik</span>
+
+                <strong>Alamat</strong>
+                <span>lombok, Indonesia</span>
+
+                <strong>Jenis Kelamin</strong>
+                <span>perempuan</span>
+
+                <strong>Umur</strong>
+                <span>21 Tahun</span>
+
+                <strong>No. HP</strong>
+                <span>085945704206</span>
+
+                <strong>Email</strong>
+                <span>istiksayapoco@gmail.com</span>
+            </div>
+        </section>
+
+        <!-- TENTANG SAYA -->
+        <section>
+            <h2>Tentang Saya</h2>
+
+            <p>
+                Halo, saya <strong>Nama Lengkap Anda</strong>. 
+                Saya adalah seorang yang memiliki minat dalam bidang teknologi,
+                desain, dan pengembangan website. Saya senang mempelajari
+                hal-hal baru serta mengembangkan kemampuan melalui berbagai
+                proyek dan pengalaman.
+            </p>
+        </section>
+
+        <!-- RIWAYAT PENDIDIKAN -->
+        <section>
+            <h2>Riwayat Pendidikan</h2>
+
+            <div class="pendidikan">
+
+                <div class="pendidikan-item">
+                    <h3>Uniqba</h3>
+                    <p>2022 - Sekarang</p>
+                    <p>teknologi informasi</p>
+                </div>
+
+                <div class="pendidikan-item">
+                    <h3>smk islam plus yadaro</h3>
+                    <p>2019 - 2022</p>
+                    <p>tkj</p>
+                </div>
+
+                <div class="pendidikan-item">
+                    <h3>smp 5 selong</h3>
+                    <p>2016 - 2019</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PORTOFOLIO -->
+        <section>
+            <h2>Portofolio</h2>
+
+            <div class="portfolio">
+
+                <div class="card">
+                    <h3>Website Profil</h3>
+                    <p>
+                        Membuat website profil pribadi menggunakan HTML,
+                        CSS, dan JavaScript.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Aplikasi Penjualan</h3>
+                    <p>
+                        Membuat aplikasi sederhana untuk mengelola data
+                        produk dan transaksi penjualan.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Desain UI/UX</h3>
+                    <p>
+                        Membuat desain antarmuka aplikasi yang sederhana,
+                        modern, dan mudah digunakan.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Nama Lengkap Anda. Semua Hak Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
